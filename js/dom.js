@@ -1,5 +1,5 @@
 // Single Element Selector
-
+/*
     // *.getElementById()
 console.log(document.getElementById('ul-title')); //without making variable;
 
@@ -24,6 +24,7 @@ console.log(paragraphs); //to select single-> follow this method => console.log(
 
 for(let i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.color = "blue";
+    
 } //change tex/color or any thing by for loop; can also change those by while  loop/forEach loop any other loops;
 
 
@@ -33,14 +34,29 @@ const listName = document.getElementsByClassName('single-item');
 
 console.log(listName);
 
-    // *.querySelectorAll()
+    // *.querySelectorAll() --only NodeList;
 
+const paragraph = document.querySelectorAll('p');
 
-// Get Child Nodes Property
+paragraph.forEach(p => {
+    p.style.color = "lime"
+});  //node listed element would be manipulated by forEach loop;
+console.log(paragraph);
+
+// Get Child Nodes Property --property;
     // *.childNodes
+
+const list = document.querySelector('ul#list');
+
+console.log(list.childNodes);
 
 
 // Get Children Element Nodes
-    // *.children
+    // *.children  --only Element Nodes;
+    
+const lists = document.querySelector('ul#list');
+
+console.log(lists.children);
 
 
+*/
