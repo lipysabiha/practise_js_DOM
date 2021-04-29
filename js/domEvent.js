@@ -12,7 +12,8 @@
 
 const colors = ['Red', 'Blue', 'Orange', 'Green', 'Yellow', 'Purple', 'Violet', 'Indigo', 'Gray', 'Teal', 'Lime', 'SkyBlue', 'SeaGreen'];
 
-const container = document.querySelector('section');
+
+const section = document.querySelector('#container');
 const h1 = document.querySelector('h1');
 const selectedColor = document.querySelector('#selectedColor');
 
@@ -20,7 +21,7 @@ for (let color of colors) {
     const box = document.createElement('div');
     box.classList.add('box');
 
-    container.appendChild(box);
+    section.appendChild(box);
 
     box.style.backgroundColor = color;
 
