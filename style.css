@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+    justify-content: content;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 160px;
+}
+
+h1, span {
+    font-family: monospace;
+    font-size: 20px;
+    display:inline-block;
+}
+
+#selectedColor {
+    color: #fff;
+    padding: 6px;
+}
